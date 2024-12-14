@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+        display: block;
+}
+body {
+        line-height: 1;
+}
+ol, ul {
+        list-style: none;
+}
+blockquote, q {
+        quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: '';
+        content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------------------- basic fixes ----------------------------- */
+img{
+  overflow: hidden;
+}
+
+h1{
+  font-size: 16pt;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 100;
+}
+
+h3{
+  font-size: 18pt;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 100;
+}
+
+p{
+  font-size: 13.5pt;
+  line-height: 20pt;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 100;
+}
+
+/* ----------------------------- grid ----------------------------- */
+
+/* --- header --- */
+
+.topGrid{
+  display: grid;
+  grid-template-rows: 7.9rem 3fr;
+}
+
+body{
+  background: #FBF6F0;
+}
+
+.mkHeader{
+  display:grid;
+  grid-template-columns: 12.81rem 1fr 7rem;
+  margin: 0;
+  overflow:hidden;
+
+  min-height:100px;
+  max-height:150px;
+
+}
+
+.mkHA a img{
+  height:8rem;
+}
+
+.mkHB, .mkHC{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #211A1D;
+  padding: 18px 15px 18px 15px;
+}
+
+.mkHB{
+  color: #211A1D;
+}
+
+/* --- body --- */
+
+.mkGrid{
+  display: grid;
+  grid-template-rows: [bckground-start mkTop-start] 0.4fr [mkTop-end mkNew-start] 1fr [bckground-end mkNew-end mkFooter-start] 100px [mkFooter-end];
+}
+
+.mkBackground{
+  grid-area: bckground;
+
+  width:100%;
+  height: auto;
+}
+
+.mkTop{
+  grid-area: mkTop;
+  padding: 4rem 10px 10px 3rem;
+}
+
+#mkTopContent{
+  color: #BE4416;
+  width: 17ch;
+  margin-bottom: 20px;
+}
+
+.viewPortfolio{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #211A1D;
+  padding: 8px 12px 8px 12px;
+  width: 115px;
+  border-radius:22px;
+
+  color: #FBF6F0;
+}
+
+.viewPortfolio a{
+  list-style: none;
+  text-decoration: none;
+
+  font-size: 10.5pt;
+  padding-right:5px;
+  color: #FBF6F0;
+}
+
+.viewPortfolio img{
+  height:20px;
+}
+
+.mkNew{
+  grid-area: mkNew;
+}
+
+.mkNewTitle{
+  background: #211A1D;
+  width:175px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+
+  margin-top:4rem;
+  padding: 15px 12px 15px 25px;
+  
+  color: #FBF6F0;
+  font-weight: 700;
+}
+
+.mkContent{
+  padding: 2rem 3rem 4rem 3rem;
+
+}
+.mkContent video, .mkContent img{
+  padding-bottom: 15px;
+}
+
+/* --- about --- */
+
+.aboutBackground{
+  grid-area: bckground;
+  width:100%;
+  height:auto;
+
+}
+
+.aboutContent{
+  margin: 3rem;
+  grid-area: mkTop;
+}
+
+.aboutContent img{
+  min-width: 250px;
+  max-width:100%;
+  height:auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.writtenContentAbout {
+  grid-area:mkNew;
+}
+
+.writtenContentAbout h3{
+  font-weight: 500;
+  font-size: 36pt;
+  width: 32ch;
+
+  padding:25px 1rem 10px 1rem;
+}
+
+.flexImgTxt{
+  display: flex;
+}
+
+.flexImgTxt img{
+  position: relative;
+  align-items: flex-end;
+  padding:8rem 2rem 10px 2rem;
+}
+
+.flexImgTxt p{
+  position: absolute;
+  font-size: 21pt;
+  line-height: 30pt;
+  width: 32ch;
+  padding:0 2rem 10px 2rem;
+}
+
+
+
+/* --- menu --- */
+
+.mainMenu{
+  overflow: hidden;
+}
+
+.mkMenu{
+  display: grid;
+  grid-template-rows: 3.9rem 1fr;
+}
+
+.mkHeaderMenu{
+  display:grid;
+  grid-template-columns: 6.3rem 1fr 4rem;
+  margin: 0;
+
+}
+
+.mkHAM a img{
+  height:3.95rem;
+  overflow:hidden;
+}
+
+.mkHBM, .mkHCM{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #211A1D;
+  padding: 18px 15px 18px 15px;
+  height:1.75rem;
+}
+.mkHCM{
+  height: 1.75rem;
+}
+
+.bodyMenu{
+  display: grid;
+  grid-template-columns: 133px [menu-start] 1fr [menu-end];
+  
+  background: #211A1D;
+  width:100%;
+}
+
+.bodyMenu img{
+  overflow: hidden;
+  height:100%;
+}
+
+.bMenuText{
+  padding-top: 60px;
+}
+
+.bMenuText a{
+  display: flex;
+  justify-content: flex-end;
+
+  list-style: none;
+  text-decoration: none;
+
+  margin: 0 25px 0 0;
+
+  background: #211A1D;
+  color: #FBF6F0;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12pt;
+  line-height: 36pt;
+
+  text-align:right;
+}
+
+.bMenuText hr{
+  justify-content: flex-end;
+
+  margin:5px 25px 30px 25px;
+
+  background: #FBF6F0;
+  min-width:6rem;
+  max-width:36rem;
+  height:2px;
+}
+
+/* --- footer --- */
+
+.footer{
+  display: flex;
+
+  background: #211A1D;
+  grid-area: mkFooter;
+
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* .footer {
+  background:#FBF6F0;
+} */
+
+#copyright{
+  width: 130px;
+  height:14px;
+
+  padding:25px;
+}
+
+.hoverIcons{
+  display: flex;
+
+  justify-content:space-between;
+
+  width:140px;
+  height: 35px;
+  margin:25px;
+}
