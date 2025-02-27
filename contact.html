@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mary Kleinschmidt Contact</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="full">
+      <header>
+        <div class="hStart">
+          <a href="index.html" alt="Mary Kleinschmidt page"
+            ><img id="MK-logo" src="MK-logo.png" alt="Mary Kleinschmidt logo"
+          /></a>
+        </div>
+        <div class="hMid"><h1>Mary Kleinschmidt</h1></div>
+        <div class="hEnd">
+          <a href="menu.html" alt="open menu"
+            ><img src="plus.png" alt="plus icon"
+          /></a>
+          <ul>
+            <li><a href="about.html" alt="about page">About</a></li>
+            <li>
+              <a href="portfolio.html" alt="portfolio page">Portfolio</a>
+            </li>
+            <li><a href="resume.html" alt="resume page">Resume</a></li>
+            <li><a href="contact.html" alt="contact page">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="body">
+          <div class="contactMe">
+            <div class="contactLeft">
+              <div class="container">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="ed1f8b34-27ec-4ae5-9997-34234ef1c1c3"
+                  />
+                  <div class="topName">
+                    <div class="topLeft">
+                      <label for="fname">First Name</label>
+                      <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        placeholder="Your name.."
+                      />
+                    </div>
+
+                    <div class="topRight">
+                      <label for="lname">Last Name</label>
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lastname"
+                        placeholder="Your last name.."
+                      />
+                    </div>
+                  </div>
+
+                  <label for="uemail">Email</label>
+                  <input
+                    type="text"
+                    id="uemail"
+                    name="email"
+                    placeholder="Your email.."
+                  />
+
+                  <label for="subject">Subject</label>
+                  <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="Write something.."
+                    style="height: 200px"
+                  ></textarea>
+
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+            </div>
+            <div class="contactRight">
+              <img src="contact.png" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="fLine"><p>hidden message</p></div>
+        <div class="fLeft">
+          <div class="fLeftContent">
+            <p>Copyright</p>
+            <img src="copyright.png" alt="copyright" />
+            <p>2024</p>
+          </div>
+        </div>
+        <div class="fRight">
+          <img src="phoneNumber.png" alt="phone number" />
+          <img src="email.png" alt="email" />
+          <!-- <img src="images/icons/instagram.png" alt="instagram" /> -->
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
